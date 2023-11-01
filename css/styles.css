@@ -53,6 +53,7 @@ button {
   flex-direction: row;
   gap: 40px;
   align-items: center;
+  position: relative;
 }
 .menu-list:last-child {
   margin-right: 0;
@@ -157,6 +158,15 @@ span {
 /* MAin Content */
 
 /* hero sect */
+.decor::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-top: 20px;
+  position: absolute;
+}
 .section-advantages {
   display: flex;
   margin-left: auto;
@@ -178,6 +188,17 @@ span {
 .hero-sect {
   background: var(--NAVY-BLUE, #2e2f42);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-3 {
@@ -192,9 +213,6 @@ span {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
-  background: var(--NAVY-BLUE, #2e2f42);
-}
-.main-hero-head {
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
@@ -228,6 +246,15 @@ span {
 }
 
 /* Section1 */
+.advantages-menu-icon {
+  display: flex;
+  align-items: center;
+}
+.advantages-icon {
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+}
 .menu-advantages {
   display: flex;
   gap: 24px;
