@@ -246,14 +246,18 @@ span {
 }
 
 /* Section1 */
-.advantages-menu-icon {
+.icon-two {
   display: flex;
   align-items: center;
+  gap: 24px;
+  margin-bottom: 8px;
 }
 .advantages-icon {
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-advantages {
   display: flex;
