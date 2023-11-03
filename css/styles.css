@@ -248,8 +248,7 @@ span {
 /* Section1 */
 .icon-two {
   display: flex;
-  align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 .icon-three {
   width: calc((100% - 72px) / 4);
