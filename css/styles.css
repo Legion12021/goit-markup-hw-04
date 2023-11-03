@@ -250,7 +250,6 @@ span {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 8px;
 }
 .advantages-icon {
   border-radius: 4px;
@@ -258,6 +257,8 @@ span {
   background: var(--CLOUD, #f4f4fd);
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .menu-advantages {
   display: flex;
