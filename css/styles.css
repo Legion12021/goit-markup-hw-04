@@ -426,7 +426,11 @@ span {
   height: 100%;
   width: 100%;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item .text-app {
+  transform: translateY(0%);
 }
 .portfolio-div {
   padding: 32px 16px;
@@ -438,8 +442,6 @@ span {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .portfolio-section {
   background-color: #ffffff;
@@ -495,6 +497,38 @@ span {
   letter-spacing: 0.02em;
 }
 /* footer */
+.page-footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social-link-name {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.logotype-footer-container {
+  margin-right: 120px;
+}
+.footer-social-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
